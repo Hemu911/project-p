@@ -11,16 +11,23 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
-      <Header/>
+      <Header />
       {/* About Section */}
-      <section style={{ backgroundColor: '#ccffcc' }} className="py-16 px-6 text-center">
+      <section className="bg-cyan-400 py-16 px-6 text-center mt-4 m-5 ">
+  <h1 className="text-3xl font-semibold text-amber-900 mb-4">Tours & Travels In Nepal</h1>
+  <h1 className="text-3xl font-semibold text-amber-900 mb-8">Travel made easy</h1>
 
-        <h1 className="text-3xl font-semibold text-amber-900 mb-4"> Tours & Travels In Nepal</h1>
-        <h1 className="text-3xl font-semibold text-amber-900 mb-4">Travel made easy</h1>
-        <p className="text-green-600 max-w-xl mx-auto mb-10">
-          <h2>Write a paragraph that talks about your company here. You can talk about your company's background, history, mission, vision, or philosophy. Anything that will introduce your brand's persona to your clients. This will help build a connection between you and them, that hopefully leads into a working relationship..</h2>
-        </p>
-        </section>
+  <p className="max-w-4xl mx-auto text-justify text-slate-800 text-lg font-[Poppins] px-4">
+    Welcome to Tours & Travels in Nepal, your trusted partner in exploring the beauty, culture,
+    and adventure of Nepal. Founded with a passion for showcasing the heart of the Himalayas,
+    our company is dedicated to making travel easy, memorable, and enriching. With years of
+    experience in the tourism industry, we offer personalized tour packages, trekking adventures,
+    cultural explorations, and travel services tailored to your interests. Our mission is to
+    provide authentic, safe, and affordable travel experiences while promoting responsible tourism
+    that respects local communities and nature. We believe in creating not just trips, but
+    unforgettable journeys that connect people with the true essence of Nepal.
+  </p>
+</section>
       <ScrollablePlaces
         title=" Popular Places in Nepal"
         places={[
@@ -65,56 +72,56 @@ const Home = () => {
       <ScrollablePlaces
         title="Religion & Cultural Places in Nepal"
         places={[
-          { name: 'Pashupatinath Temple', image: '/images/pashupatinath.jpg', description: 'Sacred Hindu temple dedicated to Lord Shiva in Kathmandu.',price: 3000 },
+          { name: 'Pashupatinath Temple', image: '/images/pashupatinath.jpg', description: 'Sacred Hindu temple dedicated to Lord Shiva in Kathmandu.', price: 3000 },
           { name: 'Swayambhunath Stupa', image: '/images/swayambhunath.jpg', description: 'Ancient Buddhist stupa with panoramic views of Kathmandu.', price: 2000 },
           { name: 'Boudhanath Stupa', image: '/images/boudhanath.jpg', description: 'One of the world’s largest Buddhist stupas.', price: 2500 },
-          { name: 'Lumbini', image: '/images/lumbini.jpg', description: 'Birthplace of Lord Buddha and a UNESCO World Heritage Site.',  price: 4000 },
-          { name: 'Changu Narayan Temple', image: '/images/changu_narayan.jpg', description: 'Nepal’s oldest Hindu temple, dedicated to Vishnu.' ,  price: 1500 },
-          { name: 'Manakamana Temple', image: '/images/manakamana.jpg', description: 'Hilltop temple dedicated to Goddess Bhagwati, reachable by cable car.' ,  price: 3500 },
+          { name: 'Lumbini', image: '/images/lumbini.jpg', description: 'Birthplace of Lord Buddha and a UNESCO World Heritage Site.', price: 4000 },
+          { name: 'Changu Narayan Temple', image: '/images/changu_narayan.jpg', description: 'Nepal’s oldest Hindu temple, dedicated to Vishnu.', price: 1500 },
+          { name: 'Manakamana Temple', image: '/images/manakamana.jpg', description: 'Hilltop temple dedicated to Goddess Bhagwati, reachable by cable car.', price: 3500 },
           { name: 'Janaki Mandir', image: '/images/janaki.jpg', description: 'Hindu temple dedicated to Goddess Sita in Janakpur.', price: 3000 },
-          { name: 'Muktinath Temple', image: '/images/muktinath.jpg', description: 'Sacred site for Hindus and Buddhists in Mustang.' , price: 5000 },
-          { name: 'Pathivara Temple', image: '/images/pathivara.jpg', description: 'Famous pilgrimage temple in eastern Nepal.' , price: 2000 },
-          { name: 'Gosaikunda', image: '/images/gosaikunda.jpg', description: 'Sacred alpine lake revered by Hindus and Buddhists.' , price: 4500 },
-          { name: 'Tengboche Monastery', image: '/images/tengboche.jpg', description: 'Important Buddhist monastery in Everest region.'   , price: 3000 },
-          { name: 'Namobuddha Monastery', image: '/images/namobuddha.jpg', description: 'Popular Buddhist monastery near Dhulikhel.'  , price: 2500 },
-          { name: 'Kopan Monastery', image: '/images/kopan.jpg', description: 'Buddhist monastery popular for meditation and retreats.' , price: 2000 },
-          { name: 'Hiranya Varna Mahavihar', image: '/images/hiranya.jpg', description: 'Golden Buddhist monastery in Patan.' , price: 1500 },
-          { name: 'Bhaktapur Durbar Square', image: '/images/bhaktapur.jpg', description: 'Historic square with temples and palaces.' , price: 3000 },
-          { name: 'Patan Durbar Square', image: '/images/patan.jpg', description: 'Ancient royal palace and cultural hub.'  , price: 2500 },
-          { name: 'Kathmandu Durbar Square', image: '/images/kathmandu_durbar.jpg', description: 'Center of old Kathmandu with palaces and temples.'  , price: 2000 },
-          { name: 'Bhairabnath Temple', image: '/images/bhairabnath.jpg', description: 'Famous temple dedicated to Lord Bhairav.' , price: 1500 },
-          { name: 'Ganesh Temple', image: '/images/ganesh.jpg', description: 'Popular temple dedicated to Lord Ganesh.'   , price: 1000 },
-          { name: 'Siddha Gufa', image: '/images/siddha_gufa.jpg', description: 'One of the largest caves in Nepal with spiritual significance.'  , price: 2000 },
-          { name: 'Dolakha Bhimsen Temple', image: '/images/dolakha_bhimsen.jpg', description: 'Temple famous for its mysterious idol.' , price: 3000 },
-          { name: 'Rani Mahal', image: '/images/rani_mahal.jpg', description: 'Historic palace by the Kali Gandaki river.'  , price: 2500 },
-          { name: 'Nuwakot Durbar', image: '/images/nuwakot.jpg', description: 'Ancient fort and palace complex.'   , price: 2000 },
-          { name: 'Gorkha Durbar', image: '/images/gorkha.jpg', description: 'Historic royal palace and birthplace of King Prithvi Narayan Shah.' , price: 3000 },
-          { name: 'Tilaurakot', image: '/images/tilaurakot.jpg', description: 'Ancient archaeological site believed to be King Gautam Buddha’s childhood home.' , price: 4000 },
-          { name: 'Ramagrama Stupa', image: '/images/ramagrama.jpg', description: 'Ancient Buddhist stupa containing relics of Lord Buddha.'  , price: 3500 },
-          { name: 'Gan Baha', image: '/images/gan_baha.jpg', description: 'Ancient Buddhist monastery in Patan.'  , price: 1500 },
-          { name: 'Bajrayogini Temple', image: '/images/bajrayogini.jpg', description: 'Important Buddhist temple near Kathmandu.'  , price: 2000 },
-          { name: 'Sinja Valley', image: '/images/sinja_valley.jpg', description: 'Ancient capital of the Khas Kingdom with cultural significance.' , price: 3000  },
-          { name: 'Khokana Village', image: '/images/khokana.jpg', description: 'Traditional Newari village known for mustard oil production.'  , price: 1500 },
-          { name: 'Tansen', image: '/images/tansen.jpg', description: 'Historic hill town with rich culture.' , price: 2000 },
-          { name: 'Panauti', image: '/images/panauti.jpg', description: 'Ancient town with temples and festivals.'  , price: 1500 },
-          { name: 'Ram Mandir', image: '/images/ram_mandir.jpg', description: 'Famous temple dedicated to Lord Rama.' , price: 1000 },
-          { name: 'Changu Narayan Complex', image: '/images/changu_complex.jpg', description: 'Complex around Nepal’s oldest temple.' , price: 2000 },
-          { name: 'Kalaswor Mahadev', image: '/images/kalaswor.jpg', description: 'Temple dedicated to Lord Shiva.'   , price: 1500 },
-          { name: 'Narayanthan', image: '/images/narayanthan.jpg', description: 'Temple dedicated to Lord Vishnu.'  , price: 2000 },
-          { name: 'Pharping', image: '/images/pharping.jpg', description: 'Sacred Buddhist sites including Asura Cave.' , price: 2500 },
-          { name: 'Chabahil Stupa', image: '/images/chabahil.jpg', description: 'One of the oldest Buddhist stupas.'  , price: 1500 },
-          { name: 'Janai Purnima', image: '/images/janai_purnima.jpg', description: 'Festival and pilgrimage sites around sacred lakes.'  , price: 2000 },
-          { name: 'Shivapuri National Park Temples', image: '/images/shivapuri.jpg', description: 'Temples inside Shivapuri park.'  , price: 2500 },
-          { name: 'Khaptad National Park', image: '/images/khaptad.jpg', description: 'Sacred area with temples and natural beauty.'  , price: 3000 },
-          { name: 'Devi’s Fall (Patale Chhango)', image: '/images/devis_fall.jpg', description: 'Sacred waterfall with cultural legends.'     , price: 1500 },
-          { name: 'Halesi Mahadev Temple', image: '/images/halesi.jpg', description: 'Famous cave temple in Khotang district.'  , price: 2000 },
-          { name: 'Dakshinkali Temple', image: '/images/dakshinkali.jpg', description: 'Temple known for animal sacrifices and goddess worship.'  , price: 1500 },
-          { name: 'Rani Mahal', image: '/images/rani_mahal2.jpg', description: 'Historic palace known as the “Taj Mahal of Nepal.”'   , price: 2000 },
-          { name: 'Siddha Baba Temple', image: '/images/siddha_baba.jpg', description: 'Important temple on the way to Pokhara.'  , price: 2500 },
-          { name: 'Maju Deval', image: '/images/maju_deval.jpg', description: 'Ancient temple in Kathmandu Durbar Square.'  , price: 1500 },
-          { name: 'Ashoka Stupa', image: '/images/ashoka_stupa.jpg', description: 'Ancient Buddhist stupa built by Emperor Ashoka.' , price: 2000 },
-          { name: 'Namo Buddha', image: '/images/namo_buddha.jpg', description: 'Sacred Buddhist pilgrimage site near Kathmandu.'   , price: 2500 },
-          { name: 'Buddhanilkantha Temple', image: '/images/buddhanilkantha.jpg', description: 'Famous temple with a reclining statue of Lord Vishnu.' , price: 2000 },
+          { name: 'Muktinath Temple', image: '/images/muktinath.jpg', description: 'Sacred site for Hindus and Buddhists in Mustang.', price: 5000 },
+          { name: 'Pathivara Temple', image: '/images/pathivara.jpg', description: 'Famous pilgrimage temple in eastern Nepal.', price: 2000 },
+          { name: 'Gosaikunda', image: '/images/gosaikunda.jpg', description: 'Sacred alpine lake revered by Hindus and Buddhists.', price: 4500 },
+          { name: 'Tengboche Monastery', image: '/images/tengboche.jpg', description: 'Important Buddhist monastery in Everest region.', price: 3000 },
+          { name: 'Namobuddha Monastery', image: '/images/namobuddha.jpg', description: 'Popular Buddhist monastery near Dhulikhel.', price: 2500 },
+          { name: 'Kopan Monastery', image: '/images/kopan.jpg', description: 'Buddhist monastery popular for meditation and retreats.', price: 2000 },
+          { name: 'Hiranya Varna Mahavihar', image: '/images/hiranya.jpg', description: 'Golden Buddhist monastery in Patan.', price: 1500 },
+          { name: 'Bhaktapur Durbar Square', image: '/images/bhaktapur.jpg', description: 'Historic square with temples and palaces.', price: 3000 },
+          { name: 'Patan Durbar Square', image: '/images/patan.jpg', description: 'Ancient royal palace and cultural hub.', price: 2500 },
+          { name: 'Kathmandu Durbar Square', image: '/images/kathmandu_durbar.jpg', description: 'Center of old Kathmandu with palaces and temples.', price: 2000 },
+          { name: 'Bhairabnath Temple', image: '/images/bhairabnath.jpg', description: 'Famous temple dedicated to Lord Bhairav.', price: 1500 },
+          { name: 'Ganesh Temple', image: '/images/ganesh.jpg', description: 'Popular temple dedicated to Lord Ganesh.', price: 1000 },
+          { name: 'Siddha Gufa', image: '/images/siddha_gufa.jpg', description: 'One of the largest caves in Nepal with spiritual significance.', price: 2000 },
+          { name: 'Dolakha Bhimsen Temple', image: '/images/dolakha_bhimsen.jpg', description: 'Temple famous for its mysterious idol.', price: 3000 },
+          { name: 'Rani Mahal', image: '/images/rani_mahal.jpg', description: 'Historic palace by the Kali Gandaki river.', price: 2500 },
+          { name: 'Nuwakot Durbar', image: '/images/nuwakot.jpg', description: 'Ancient fort and palace complex.', price: 2000 },
+          { name: 'Gorkha Durbar', image: '/images/gorkha.jpg', description: 'Historic royal palace and birthplace of King Prithvi Narayan Shah.', price: 3000 },
+          { name: 'Tilaurakot', image: '/images/tilaurakot.jpg', description: 'Ancient archaeological site believed to be King Gautam Buddha’s childhood home.', price: 4000 },
+          { name: 'Ramagrama Stupa', image: '/images/ramagrama.jpg', description: 'Ancient Buddhist stupa containing relics of Lord Buddha.', price: 3500 },
+          { name: 'Gan Baha', image: '/images/gan_baha.jpg', description: 'Ancient Buddhist monastery in Patan.', price: 1500 },
+          { name: 'Bajrayogini Temple', image: '/images/bajrayogini.jpg', description: 'Important Buddhist temple near Kathmandu.', price: 2000 },
+          { name: 'Sinja Valley', image: '/images/sinja_valley.jpg', description: 'Ancient capital of the Khas Kingdom with cultural significance.', price: 3000 },
+          { name: 'Khokana Village', image: '/images/khokana.jpg', description: 'Traditional Newari village known for mustard oil production.', price: 1500 },
+          { name: 'Tansen', image: '/images/tansen.jpg', description: 'Historic hill town with rich culture.', price: 2000 },
+          { name: 'Panauti', image: '/images/panauti.jpg', description: 'Ancient town with temples and festivals.', price: 1500 },
+          { name: 'Ram Mandir', image: '/images/ram_mandir.jpg', description: 'Famous temple dedicated to Lord Rama.', price: 1000 },
+          { name: 'Changu Narayan Complex', image: '/images/changu_complex.jpg', description: 'Complex around Nepal’s oldest temple.', price: 2000 },
+          { name: 'Kalaswor Mahadev', image: '/images/kalaswor.jpg', description: 'Temple dedicated to Lord Shiva.', price: 1500 },
+          { name: 'Narayanthan', image: '/images/narayanthan.jpg', description: 'Temple dedicated to Lord Vishnu.', price: 2000 },
+          { name: 'Pharping', image: '/images/pharping.jpg', description: 'Sacred Buddhist sites including Asura Cave.', price: 2500 },
+          { name: 'Chabahil Stupa', image: '/images/chabahil.jpg', description: 'One of the oldest Buddhist stupas.', price: 1500 },
+          { name: 'Janai Purnima', image: '/images/janai_purnima.jpg', description: 'Festival and pilgrimage sites around sacred lakes.', price: 2000 },
+          { name: 'Shivapuri National Park Temples', image: '/images/shivapuri.jpg', description: 'Temples inside Shivapuri park.', price: 2500 },
+          { name: 'Khaptad National Park', image: '/images/khaptad.jpg', description: 'Sacred area with temples and natural beauty.', price: 3000 },
+          { name: 'Devi’s Fall (Patale Chhango)', image: '/images/devis_fall.jpg', description: 'Sacred waterfall with cultural legends.', price: 1500 },
+          { name: 'Halesi Mahadev Temple', image: '/images/halesi.jpg', description: 'Famous cave temple in Khotang district.', price: 2000 },
+          { name: 'Dakshinkali Temple', image: '/images/dakshinkali.jpg', description: 'Temple known for animal sacrifices and goddess worship.', price: 1500 },
+          { name: 'Rani Mahal', image: '/images/rani_mahal2.jpg', description: 'Historic palace known as the “Taj Mahal of Nepal.”', price: 2000 },
+          { name: 'Siddha Baba Temple', image: '/images/siddha_baba.jpg', description: 'Important temple on the way to Pokhara.', price: 2500 },
+          { name: 'Maju Deval', image: '/images/maju_deval.jpg', description: 'Ancient temple in Kathmandu Durbar Square.', price: 1500 },
+          { name: 'Ashoka Stupa', image: '/images/ashoka_stupa.jpg', description: 'Ancient Buddhist stupa built by Emperor Ashoka.', price: 2000 },
+          { name: 'Namo Buddha', image: '/images/namo_buddha.jpg', description: 'Sacred Buddhist pilgrimage site near Kathmandu.', price: 2500 },
+          { name: 'Buddhanilkantha Temple', image: '/images/buddhanilkantha.jpg', description: 'Famous temple with a reclining statue of Lord Vishnu.', price: 2000 },
           { name: 'Kirtipur', image: '/images/kirtipur.jpg', description: 'Historic town with temples and traditional Newari culture.', price: 1500 },
           { name: 'Bhaktapur Pottery Square', image: '/images/pottery_square.jpg', description: 'Cultural site known for traditional pottery making.', price: 1000 },
           { name: 'Gorkha Palace', image: '/images/gorkha_palace.jpg', description: 'Historic palace and birthplace of King Prithvi Narayan Shah.', price: 3000 },
@@ -123,8 +130,8 @@ const Home = () => {
         ]}
       />
 
-          
-            
+
+
       <ScrollablePlaces
         title="Himalayan Places in Nepal"
         places={[
@@ -137,7 +144,7 @@ const Home = () => {
           {
             name: 'Annapurna Base Camp',
             image: '/images/annapurna.jpg',
-            description: 'A popular trekking destination with panoramic mountain scenery.', 
+            description: 'A popular trekking destination with panoramic mountain scenery.',
             price: 8000
           },
           {
@@ -269,7 +276,7 @@ const Home = () => {
             name: 'Bardia National Park',
             image: '/images/bardia.jpg',
             description: 'Less crowded than Chitwan, known for its rich wildlife.',
-            price: 3500   
+            price: 3500
           },
           {
             name: 'Langtang National Park',
@@ -299,17 +306,17 @@ const Home = () => {
             name: 'Gaurishankar Conservation Area',
             image: '/images/gaurishankar.jpg',
             description: 'Protects the Gaurishankar mountain range and surrounding ecosystems.',
-            price: 4500   
+            price: 4500
           },
           {
             name: 'Api Nampa Conservation Area',
             image: '/images/api_nampa.jpg',
             description: 'Protects Api and Nampa mountains, rich in flora and fauna.',
-            price: 5000 
+            price: 5000
           },
 
 
-          
+
         ]}
       />
       <ScrollablePlaces
@@ -375,7 +382,7 @@ const Home = () => {
             description: 'Perfect for snow adventure, short trek, and panoramic scenes.',
             price: 4000
           },
-        
+
           {
             name: 'Bungee Jumping',
             image: '/images/bungee.jpg',
@@ -432,13 +439,13 @@ const Home = () => {
           },
         ]}
       />
-   
-      
-    
-  <Footer />
 
 
-  </>
+
+      <Footer />
+
+
+    </>
   );
 };
 
