@@ -11,13 +11,30 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
+     <section
+        className="bg-cover bg-center py-36 px-1 text-center m-5"
+        style={{ backgroundImage: `url('/green.jpg')` }} // Make sure green.jpg is in /public
+      >
+        <h1 className="text-5xl font-bold mb-4 text-white drop-shadow-lg font-serif">
+         Travel and Visit Nepal with us
+        </h1>
+        <p className="text-lg text-white mb-6 drop-shadow font-[poppins]">
+          Discover new places, unique cultures, and beautiful experiences with our tourism platform.
+        </p>
+        <button className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
+          Get Started
+        </button>
+      </section>
       <Header />
       {/* About Section */}
-      <section className="bg-cyan-400 py-16 px-6 text-center mt-4 m-5 ">
-  <h1 className="text-3xl font-semibold text-amber-900 mb-4">Tours & Travels In Nepal</h1>
-  <h1 className="text-3xl font-semibold text-amber-900 mb-8">Travel made easy</h1>
+     {/* <section className="bg-[#E0F7FA] py-10 px-6 text-[#0D3B66] text-justify">
+  
 
   <p className="max-w-4xl mx-auto text-justify text-slate-800 text-lg font-[Poppins] px-4">
+    <h2 className="text-3xl font-bold mb-4 text-center">
+    Discover Nepal with Us: Your Gateway to Authentic Travel & Timeless Adventures
+  </h2>
+
     Welcome to Tours & Travels in Nepal, your trusted partner in exploring the beauty, culture,
     and adventure of Nepal. Founded with a passion for showcasing the heart of the Himalayas,
     our company is dedicated to making travel easy, memorable, and enriching. With years of
@@ -27,7 +44,7 @@ const Home = () => {
     that respects local communities and nature. We believe in creating not just trips, but
     unforgettable journeys that connect people with the true essence of Nepal.
   </p>
-</section>
+</section> */}
       <ScrollablePlaces
         title=" Popular Places in Nepal"
         places={[

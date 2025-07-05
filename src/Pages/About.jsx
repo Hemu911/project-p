@@ -1,79 +1,64 @@
+// src/pages/About.jsx
 import React from 'react';
-import Navbar from '../Components/Navbar';
 
-const About = () => {
-  return (
-    <>
-      <Navbar title="" />
+const About = () => (
+  <>
+    {/* Page Banner */}
+     <section className="bg-[#E0F7FA] py-10 px-6 text-[#0D3B66] text-justify">
+  
 
-      {/* About Section */}
-      <section className="bg-white py-16 px-6 w-[92%] mx-auto mt-10 rounded-xl shadow">
-        <h1 className="text-4xl font-bold text-center text-amber-900 mb-6">Who We Are</h1>
-        <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-10">
-          We are a dedicated tourism management team focused on delivering memorable and affordable travel experiences. 
-          Our goal is to connect travelers with the best destinations, cultural experiences, and accommodations — all with 
-          ease and reliability.
-        </p>
+  <p className="max-w-4xl mx-auto text-justify text-slate-800 text-lg font-[Poppins] px-4">
+    <h2 className="text-3xl font-bold mb-4 text-center">
+    Discover Nepal with Us: Your Gateway to Authentic Travel & Timeless Adventures
+  </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-          <div>
-            <h2 className="text-2xl font-semibold mb-2 text-blue-900">Our Mission</h2>
-            <p className="text-gray-700">
-              To simplify travel planning for everyone by offering a one-stop platform that combines convenience,
-              affordability, and world-class support. We believe travel should be enjoyable, not stressful.
-            </p>
-          </div>
+    Welcome to Tours & Travels in Nepal, your trusted partner in exploring the beauty, culture,
+    and adventure of Nepal. Founded with a passion for showcasing the heart of the Himalayas,
+    our company is dedicated to making travel easy, memorable, and enriching. With years of
+    experience in the tourism industry, we offer personalized tour packages, trekking adventures,
+    cultural explorations, and travel services tailored to your interests. Our mission is to
+    provide authentic, safe, and affordable travel experiences while promoting responsible tourism
+    that respects local communities and nature. We believe in creating not just trips, but
+    unforgettable journeys that connect people with the true essence of Nepal.
+  </p>
 
-          <div>
-            <h2 className="text-2xl font-semibold mb-2 text-blue-900">Our Vision</h2>
-            <p className="text-gray-700">
-              To become the leading tourism platform for students, families, and solo travelers across Nepal and beyond. 
-              We aim to inspire exploration and make traveling accessible to everyone.
-            </p>
-          </div>
+      {/* Mission & Vision */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        <div>
+          <h2 className="text-2xl font-semibold mb-2 text-amber-800">Our Mission</h2>
+          <p className="text-gray-700">
+            To simplify travel planning for everyone by offering a one‑stop platform that combines convenience,
+            affordability, and world‑class support.
+          </p>
         </div>
-      </section>
 
-      {/* Our Team Section */}
-      <section className="py-16 bg-blue-50 w-[92%] mx-auto mt-10 rounded-xl shadow px-6">
-        <h2 className="text-3xl font-bold text-center text-amber-800 mb-10">Meet Our Team</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-          <div className="text-center p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
-            <img
-              src="https://source.unsplash.com/120x120/?man"
-              alt="Team Member"
-              className="rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold">Hemraj Chettri</h3>
-            <p className="text-gray-600">Project Leader</p>
-          </div>
-          <div className="text-center p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
-            <img
-              src="https://source.unsplash.com/120x120/?woman"
-              alt="Team Member"
-              className="rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold">Hemraj Chettri </h3>
-            <p className="text-gray-600">Frontend Developer</p>
-          </div>
-          <div className="text-center p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
-            <img
-              src="https://source.unsplash.com/120x120/?person"
-              alt="Team Member"
-              className="rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold">Hemraj Chettri</h3>
-            <p className="text-gray-600">UI/UX Designer</p>
-          </div>
+        <div>
+          <h2 className="text-2xl font-semibold mb-2 text-amber-800">Our Vision</h2>
+          <p className="text-gray-700">
+            To become the leading tourism platform for students, families, and solo travelers across Nepal – and beyond.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      {/* Footer */}
-      <footer className="bg-amber-950 text-white text-center p-6 mt-16">
-        <p>&copy; {new Date().getFullYear()} Tourism Management System. All rights reserved.</p>
-      </footer>
-    </>
-  );
-};
+    {/* Team */}
+    <section className="py-16 bg-blue-50 w-[92%] mx-auto mt-10 rounded-xl shadow px-6">
+      <h2 className="text-3xl font-bold text-center text-amber-800 mb-10">Meet Our Team</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        {[
+          { name: 'Hemraj Chettri', role: 'Project Leader',        image: 'man' },
+          { name: 'Anisha Thapa',   role: 'Frontend Developer',   image: 'woman' },
+          { name: 'Rajan Bhandari', role: 'UI/UX Designer',       image: 'person' },
+        ].map((m, i) => (
+          <div key={i} className="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+            <img src={`https://source.unsplash.com/120x120/?${m.image}`} alt={m.name} className="rounded-full mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">{m.name}</h3>
+            <p className="text-gray-600">{m.role}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  </>
+);
 
 export default About;
